@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:server": "esbuild ./server/index.jsx --bundle --platform=node --target=node16 --outfile=./server.js",
-    "build:client": "esbuild ./client/index.jsx --bundle --splitting --outdir=./public --format=esm"
+    "esbuild": "esbuild"
   },
   "keywords": [],
   "author": "",
