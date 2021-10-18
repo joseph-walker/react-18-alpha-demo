@@ -2,7 +2,7 @@ clean-client:
 	cd public && ls | xargs rm
 
 clean-server:
-	rm server.js
+	rm -f server.js
 
 build-client: clean-client
 	npm run esbuild -- ./client/index.jsx --bundle --splitting --outdir=./public --format=esm
