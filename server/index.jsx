@@ -16,7 +16,6 @@ server.get("/", function (_request, response) {
 
     response.statusCode = 200;
     response.setHeader("Content-Type", "text/html");
-    response.write(`<!DOCTYPE html>`);
 
     pipe(response);
 });
