@@ -2,7 +2,7 @@ import * as React from "react";
 import { atom, useAtom } from "jotai";
 
 const delayed = atom(
-  async () => new Promise((resolve) => setTimeout(() => resolve(42), 5000))
+  () => new Promise((resolve) => setTimeout(() => resolve(42), 5000))
 );
 
 export function Child() {
